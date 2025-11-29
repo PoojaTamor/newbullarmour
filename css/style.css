@@ -614,6 +614,9 @@ transition: all 0.5s;
     transform: translateY(0);
 }
 
+.addtext{
+    display: none;
+}
 
 @media (max-width:500px) {
     .bull_box1 h1 {
@@ -690,5 +693,163 @@ transition: all 0.5s;
     height: 30px;
     margin-top: 20px;
     top: 8%;
+}
+
+.bull_box5 h3 {
+    font-size: 1rem;
+}
+.bull_box5 p {
+    font-size: 0.9rem;
+    width: 50%;
+}
+.bull_box7row {
+    padding: 0px 0px 0px 20px;
+}
+.bull_box7 h2 {
+    font-size: 2rem;
+}
+.bull_box7_subhead span {
+    font-size: 0.8rem;
+}
+.waranty_box {
+    padding-top: 20px;
+}
+
+.top {
+    font-size: 0.8rem;
+}
+.bottom {
+    font-size: 0.8rem;
+}
+.bull_box7 .nav-link {
+    display: block;
+    padding:5px 5px;
+    font-size: 0.9rem;
+}
+.bull_box7 {
+    height: 550px;
+    background-image: url("../img/gloss_sm.png");
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.bull_box8{
+    background-image: url("../img/matte_sm.png");
+
+}
+.bull_box9{
+    background-image: url("../img/color_sm.png");
+}
+.ia-heading {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.ia-arrow {
+    font-size: 3rem;
+    margin-left: 8px;
+}
+
+.coverage-tabs{
+    padding-left: 20px !important;
+}
+
+.coverage-tabs li {
+    font-size: 1.2rem;
+    margin-top: 6px;
+}
+.ia-list li {
+    margin-bottom: 6px;
+    padding-left: 14px;
+    font-size: 0.8rem;
+    color: #060608;
+
+}
+.ia-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.carcover{
+    height: 300px !important;
+    object-fit: cover !important;
+    margin-top: -75px;
+}
+.addtext{
+    font-size: 1.5rem;
+    padding-left: 30px;
+    margin-top: -40px;
+font-weight: 500;
+letter-spacing: -0.03em;
+color: #060608;
+display: block;
+}
+.box:hover .content {
+    opacity: 1;
+    transform: translateY(0);
+}
+.content {
+    /* text-align: center; */
+    color: white;
+    opacity: 1;
+    transform: translateY(0);
+    transition: 0.4s ease;
+}
+.bull_box10 h3 {
+    font-size: 2rem;
+}
+.box {
+    height: 150px;
+    justify-content: start;
+    padding-left: 40px !important;
+}
+.bull_box10 span {
+    font-size: 1rem;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.bull_box10 p {
+    font-size: 0.9rem;
+}
+.content svg{
+    margin-left: 100px !important;
+    height: 10px !important;
+}
+.software_text {
+    margin-top: 0px;
+}
+.software_text p {
+    font-size: 0.8rem;
+}
+
+.bull_box_subb h3 {
+    font-size: 2.5rem;
+    padding-bottom: 50px;
+}
+.form_box {
+    width: 80%;
+}
+.bull_box11 {
+    background-color: #060608;
+    padding: 50px 20px 80px 20px;
+    margin-top: -50px;
+}
+.bull_box_subb p {
+    font-size: 0.9rem;
+}
+.navbar-light .navbar-toggler {
+    color: rgba(0,0,0,.55);
+    border-color: transparent !important;
+}
+.bull_box11  .form-control-custom {
+    border-radius: 7px;
+    padding: 12px;
+    font-size: 12px;
+}
+.bull_box11  .btn-send {
+    font-size: 15px;
+    padding: 7px 20px;
 }
 }
