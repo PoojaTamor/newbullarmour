@@ -732,7 +732,7 @@ transition: all 0.5s;
     font-size: 0.9rem;
 }
 .bull_box7 {
-    height: 550px;
+    height: 566px;
     background-image: url("../img/gloss_sm.png");
     background-position: 100% 100%;
     background-repeat: no-repeat;
@@ -859,3 +859,4 @@ display: block;
     padding: 7px 20px;
 }
 }
+
