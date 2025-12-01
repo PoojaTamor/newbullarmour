@@ -32,7 +32,7 @@
 }
 
 .bull_box1 h1{
-font-weight: 500;
+font-weight: 700;
 font-size: 4rem;
 line-height: 1;
 padding-bottom: 10px;
@@ -274,7 +274,7 @@ color: #060608;
 
 .bottom{
 font-size: 1.2rem;
-font-weight: 400;
+font-weight: 500;
 line-height: 1;
 color: #060608;
 }
@@ -463,19 +463,16 @@ z-index: 5;
 }
 
 .package-content {
-  position: absolute;
-  top: 0;
+  display: none;
   width: 100%;
   opacity: 0;
-  pointer-events: none;
+  transition: opacity 0.4s ease;
 }
 
 .package-content.active {
+  display: block;
   opacity: 1;
-  position: relative;
-  pointer-events: auto;
 }
-
 
 /* .coverage-tabs {
   list-style: none;
@@ -535,8 +532,6 @@ color: #060608;
 .covrage_box{
     background-color: #f2f2f2;
 }
-
-
 
 
 .ia-heading {
@@ -623,13 +618,34 @@ transition: all 0.5s;
     display: none;
 }
 
+
+@media (max-width:900px) {
+.no-wrap {
+  white-space: nowrap;
+}
+.bull_box7 h2{
+    font-size: 3.5rem;
+}
+
+.bull_box7 {
+ height: 784px;
+        background-image: url("../img/gloss_sm.png");
+        background-position: 67% 14%;
+        background-repeat: no-repeat;
+}
+
+.bull_box8{
+    background-image: url("../img/matte_sm.png");
+
+}
+.bull_box9{
+    background-image: url("../img/color_sm.png");
+}
+}
 @media (max-width:500px) {
     .bull_box1 h1 {
-    font-weight: 500;
     font-size: 2rem;
-    line-height: 1;
     padding-bottom: 10px;
-    color: #1D1D1D;
 }
 
 .bull_box1 {
@@ -693,6 +709,12 @@ transition: all 0.5s;
 .badge-icon {
     width: 70px;
 }
+.bull_box6{
+    margin-block: 20px;
+}
+.no-wrap {
+  white-space: nowrap;
+}
 
 .yellow-strip {
     height: 30px;
@@ -722,6 +744,7 @@ transition: all 0.5s;
 
 .top {
     font-size: 0.8rem;
+    margin-bottom: 5px;
 }
 .bottom {
     font-size: 0.8rem;
@@ -732,7 +755,7 @@ transition: all 0.5s;
     font-size: 0.9rem;
 }
 .bull_box7 {
-    height: 566px;
+    height: 550px;
     background-image: url("../img/gloss_sm.png");
     background-position: 100% 100%;
     background-repeat: no-repeat;
@@ -769,13 +792,14 @@ transition: all 0.5s;
     padding-left: 14px;
     font-size: 0.8rem;
     color: #060608;
-
 }
+
+
 .ia-list {
     list-style: none;
     padding-left: 0;
-    margin-bottom: 20px;
-    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-top: 0px;
 }
 .carcover{
     height: 300px !important;
@@ -785,9 +809,12 @@ transition: all 0.5s;
 .addtext{
     font-size: 1.5rem;
     padding-left: 30px;
-    margin-top: -40px;
+    /* margin-top: -40px; */
 font-weight: 500;
 letter-spacing: -0.03em;
+background-color: #fff;
+padding-top: 10px;
+padding-bottom: 25px;
 color: #060608;
 display: block;
 }
@@ -804,6 +831,10 @@ display: block;
 }
 .bull_box10 h3 {
     font-size: 2rem;
+}
+.bull_box6 h3{
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
 .box {
     height: 150px;
@@ -858,5 +889,5 @@ display: block;
     font-size: 15px;
     padding: 7px 20px;
 }
-}
 
+}
