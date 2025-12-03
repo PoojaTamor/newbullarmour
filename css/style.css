@@ -55,7 +55,7 @@ line-height:1;
 color: #F5F5F5;
 }
 .bull_box3{
-    margin-top: -250px;
+    margin-top: -260px;
 }
 
 .bull_box3 p{
@@ -65,6 +65,7 @@ line-height: 1.2;
 letter-spacing: -0.03em;
 color: #888888;
 padding-top: 25px;
+margin-bottom: 4px;
 }
 
 .bull_box2{
@@ -86,7 +87,7 @@ font-size: 1.1rem;
 line-height: 1.2;
 color: #FFFFFF;
 padding-left: 20px;
-padding-bottom: 30px;
+/* padding-bottom: 30px; */
 }
 
 .bull_box4 h5{
@@ -211,7 +212,7 @@ font-weight: 400;
 font-size: 1.1rem;
 line-height: 1.2;
 color: #3E3E3E;
-padding: 20px 20px 30px 20px;
+padding: 20px 20px 0px 20px;
 }
 
 
@@ -373,7 +374,7 @@ color: #0D0D0F;
 
    .bull_box11 {
     background-color: #060608;
-    padding: 150px 20px 80px 20px;
+    padding: 150px 20px 50px 20px;
     margin-top: -100px;
    }
 
@@ -633,6 +634,169 @@ transition: all 0.5s;
 }
 
 
+.more-wrapper {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s ease;
+  padding-top: 0px !important;
+
+}
+.readmore-btn {
+  background: none;
+  border: none;
+  color: rgb(136, 136, 136);
+  /* color: #060608; */
+  padding: 0;
+  cursor: pointer;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+
+
+.faq{
+background-color: #060608;
+
+}
+
+.accod-had{
+    font-size: 4rem;
+    color: #fff;
+}
+.accodian-box .accordion-header{
+
+    font-weight: 600;
+    color: var(--dark);
+    border-bottom: 1px solid #888888;
+    padding-bottom: 10px;
+  }
+.accodian-box .accordion-button {
+    background: #000;
+    font-size: 20px;
+    color: #888888 ;
+    /* color: var(--dark); */
+}
+
+.accodian-box .accordion-item{
+    background-color: #000;
+}
+
+.accodian-box  .accordion-button:focus{
+    box-shadow: none;
+
+}
+
+.accodian-box .accordion-item{
+    background-color: #000;
+    padding-block: 20px;
+}
+.accodian-box .accordion-button:hover{
+    background-color: #000;
+}
+.accodian-box .accordion-button:not(.collapsed) {
+    color: #fff;
+    background-color: black;
+    box-shadow:none;
+}
+.accodian-box .accordion-button::after {
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+
+    margin-left: auto;
+    content: "";
+    background-image: url("../img/down.webp");
+    background-repeat: no-repeat;
+    background-size: 1.25rem;
+    transition: transform 0.2s ease-in-out;
+}
+.accodian-box .accordion-body{
+  color: #888888;
+}
+/* .accordion-item:first-of-type .accordion-button{
+    background-color: #000;
+} */
+
+.accodian-box .accordion-button:not(.collapsed)::after {
+    background-image: url("../img/down.webp");
+    transform: rotate(-180deg);
+}
+
+.btn-whatsapp-pulse {
+  background:#ffcc00;
+  color: white;
+  position: fixed;
+  bottom: 55px;
+  right: 28px;
+  font-size: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 0;
+  height: 0;
+  z-index: 10;
+  padding: 25px;
+  text-decoration: none;
+  border-radius: 50%;
+  animation-name: pulse;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+}
+.btn-whatsapp-pulse:hover{
+  color: black;
+}
+.btn-check:checked+.btn-primary:focus, .btn-check:active+.btn-primary:focus, .btn-primary:active:focus, .btn-primary.active:focus, .show>.btn-primary.dropdown-toggle:focus {
+  box-shadow: none;
+}
+
+@keyframes pulse {
+  0% {
+      box-shadow: 0 0 0 0 rgba(252, 205, 22, 0.5); /* Updated to #FCCD16 */
+  }
+  80% {
+      box-shadow: 0 0 0 14px rgba(252, 205, 22, 0); /* Updated to #FCCD16 */
+  }
+}
+
+.btn-whatsapp-pulse-border {
+  bottom: 120px;
+  right: 20px;
+  animation-play-state: paused;
+}
+
+.btn-whatsapp-pulse-border::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  padding: 25px;
+  opacity: 0.75;
+  animation-name: pulse-border;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pulse-border {
+  0% {
+      padding: 25px;
+      opacity: 0.75;
+  }
+  75% {
+      padding: 50px;
+      opacity: 0;
+  }
+  100% {
+      opacity: 0;
+  }
+}
+
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow:none !important;
+}
+
 @media (max-width:900px) {
 .no-wrap {
   white-space: nowrap;
@@ -884,7 +1048,7 @@ display: block;
 }
 .bull_box11 {
     background-color: #060608;
-    padding: 50px 20px 80px 20px;
+    padding: 50px 20px 0px 20px;
     margin-top: -50px;
 }
 .bull_box_subb p {
@@ -902,6 +1066,20 @@ display: block;
 .bull_box11  .btn-send {
     font-size: 15px;
     padding: 7px 20px;
+}
+  .accod-had{
+    font-size: 2.5rem;
+    padding-left: 20px;
+}
+.accodian-box .accordion-button {
+  font-size: 13px;
+}
+.accodian-box .accordion-body {
+  font-size: 13px;
+  padding: 1rem 1rem;
+}
+.accodian-box .accordion-item {
+  padding-block: 4px;
 }
 
 }
